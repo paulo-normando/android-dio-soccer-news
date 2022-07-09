@@ -15,7 +15,8 @@ public class NewsViewModel extends ViewModel {
     public NewsViewModel() {
         this.news = new MutableLiveData<>();
 
-        //TODO remover mock de noticias
+        //TODO remover mock de noticias,
+
         List<News> news = new ArrayList<>();
         news.add(new News("Paysandu vence Remo no domingo","Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."));
         news.add(new News("Paysandu joga no sábado","Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."));

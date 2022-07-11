@@ -56,7 +56,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
             i.putExtra(Intent.EXTRA_TEXT, news.link);
             context.startActivity(Intent.createChooser(i, "Share"));
         });
-        // Implementação da funcionalidade de "Favoritar" (o evento será instanciado pelo Fragment):
+        // Implementação da funcionalidade de "Favoritar":
         holder.binding.ivFavorite.setOnClickListener(view -> {
             news.favorite = !news.favorite;
             this.favoriteListener.onFavorite(news);

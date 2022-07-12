@@ -3,19 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Paulo Normando/Documents/Android_Studio_Projects/android-dio-soccer-news/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.354" />
-        <entry key="..\:/Paulo Normando/Documents/Android_Studio_Projects/android-dio-soccer-news/app/src/main/res/drawable/ic_baseline_sports_soccer_24.xml" value="0.196" />
-        <entry key="..\:/Paulo Normando/Documents/Android_Studio_Projects/android-dio-soccer-news/app/src/main/res/drawable/ic_favorite.xml" value="0.354" />
-        <entry key="..\:/Paulo Normando/Documents/Android_Studio_Projects/android-dio-soccer-news/app/src/main/res/drawable/ic_laucher_foreground.xml" value="0.354" />
-        <entry key="..\:/Paulo Normando/Documents/Android_Studio_Projects/android-dio-soccer-news/app/src/main/res/drawable/ic_launcher_background.xml" value="0.354" />
-        <entry key="..\:/Paulo Normando/Documents/Android_Studio_Projects/android-dio-soccer-news/app/src/main/res/drawable/ic_share.xml" value="0.354" />
-        <entry key="..\:/Paulo Normando/Documents/Android_Studio_Projects/android-dio-soccer-news/app/src/main/res/drawable/ic_soccer.xml" value="0.354" />
-        <entry key="..\:/Paulo Normando/Documents/Android_Studio_Projects/android-dio-soccer-news/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Paulo Normando/Documents/Android_Studio_Projects/android-dio-soccer-news/app/src/main/res/layout/fragment_favorites.xml" value="0.18802083333333333" />
-        <entry key="..\:/Paulo Normando/Documents/Android_Studio_Projects/android-dio-soccer-news/app/src/main/res/layout/fragment_news.xml" value="0.18802083333333333" />
-        <entry key="..\:/Paulo Normando/Documents/Android_Studio_Projects/android-dio-soccer-news/app/src/main/res/layout/news_item.xml" value="0.18802083333333333" />
-        <entry key="..\:/Paulo Normando/Documents/Android_Studio_Projects/android-dio-soccer-news/app/src/main/res/menu/bottom_nav_menu.xml" value="0.18802083333333333" />
-        <entry key="..\:/Paulo Normando/Documents/Android_Studio_Projects/android-dio-soccer-news/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.354" />
         <entry key="..\:/Users/falvo/AndroidStudioProjects/SoccerNews/app/src/main/res/drawable/ic_favorite.xml" value="0.11" />
         <entry key="..\:/Users/falvo/AndroidStudioProjects/SoccerNews/app/src/main/res/drawable/ic_soccer.xml" value="0.11" />
         <entry key="..\:/Users/falvo/AndroidStudioProjects/SoccerNews/app/src/main/res/layout/activity_main.xml" value="0.2" />
@@ -26,6 +13,14 @@
         <entry key="..\:/Users/falvo/AndroidStudioProjects/SoccerNews/app/src/main/res/layout/fragment_notifications.xml" value="0.2234375" />
         <entry key="..\:/Users/falvo/AndroidStudioProjects/SoccerNews/app/src/main/res/layout/news_item.xml" value="0.4" />
         <entry key="..\:/Users/falvo/AndroidStudioProjects/SoccerNews/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2234375" />
+        <entry key="..\:/Users/paulo.normando/Documents/Android-Kotlin/android-dio-soccer-news-app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2085" />
+        <entry key="..\:/Users/paulo.normando/Documents/Android-Kotlin/android-dio-soccer-news-app/app/src/main/res/drawable/ic_favorite.xml" value="0.2085" />
+        <entry key="..\:/Users/paulo.normando/Documents/Android-Kotlin/android-dio-soccer-news-app/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2085" />
+        <entry key="..\:/Users/paulo.normando/Documents/Android-Kotlin/android-dio-soccer-news-app/app/src/main/res/layout/activity_main.xml" value="0.266304347826087" />
+        <entry key="..\:/Users/paulo.normando/Documents/Android-Kotlin/android-dio-soccer-news-app/app/src/main/res/layout/fragment_favorites.xml" value="0.266304347826087" />
+        <entry key="..\:/Users/paulo.normando/Documents/Android-Kotlin/android-dio-soccer-news-app/app/src/main/res/layout/fragment_news.xml" value="0.266304347826087" />
+        <entry key="..\:/Users/paulo.normando/Documents/Android-Kotlin/android-dio-soccer-news-app/app/src/main/res/layout/news_item.xml" value="0.266304347826087" />
+        <entry key="..\:/Users/paulo.normando/Documents/Android-Kotlin/android-dio-soccer-news-app/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27447916666666666" />
       </map>
     </option>
   </component>

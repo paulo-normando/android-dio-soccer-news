@@ -1,4 +1,4 @@
-[Finised]
+[Finished]
 
 # Soccer News App
 

@@ -1,4 +1,4 @@
-package me.dio.soccernews.ui.favorites;
+package me.dio.catalog.ui.favorites;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,8 +10,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import me.dio.soccernews.databinding.FragmentFavoritesBinding;
-import me.dio.soccernews.ui.adapters.NewsAdapter;
+import me.dio.catalog.databinding.FragmentFavoritesBinding;
+import me.dio.catalog.ui.adapters.SolutionsAdapter;
 
 public class FavoritesFragment extends Fragment {
 
@@ -31,7 +31,7 @@ public class FavoritesFragment extends Fragment {
     private void loadFavoriteNews() {
         favoritesViewModel.loadFavoriteNews().observe(getViewLifecycleOwner(), localNews -> {
             binding.rvNews.setLayoutManager(new LinearLayoutManager(getContext()));
-            binding.rvNews.setAdapter(new NewsAdapter(localNews, updatedNews -> {
+            binding.rvNews.setAdapter(new SolutionsAdapter(localNews, updatedNews -> {
                 favoritesViewModel.saveNews(updatedNews);
                 loadFavoriteNews();
             }));

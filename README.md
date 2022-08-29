@@ -2,12 +2,12 @@
 
 # Soccer News App
 
-- Final app for woman soccer news app based in America Cup git hub pages that simulates an json Api
+- Final app for woman soccer solutions app based in America Cup git hub pages that simulates an json Api
 
 # Features
 
 - Implementation of Firebase and Craslytics plugin; 
-- RecycleView and Livedata for refresh of favorite news list;
+- RecycleView and Livedata for refresh of favorite solutions list;
 - Api Json acessad by Retrotif;
 - Picasso for imagem suport and access;
 - Layout and colores projected with Material Desing;

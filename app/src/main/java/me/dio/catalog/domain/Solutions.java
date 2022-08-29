@@ -1,10 +1,10 @@
-package me.dio.soccernews.domain;
+package me.dio.catalog.domain;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity
-public class News {
+public class Solutions {
     @PrimaryKey
     public int id;
     public String title;

@@ -1,4 +1,4 @@
-package me.dio.soccernews.ui.news;
+package me.dio.catalog.ui.news;
 
 import android.os.AsyncTask;
 
@@ -9,30 +9,30 @@ import androidx.lifecycle.ViewModel;
 
 import java.util.List;
 
-import me.dio.soccernews.data.SoccerNewsRepository;
-import me.dio.soccernews.domain.News;
+import me.dio.catalog.data.SolutionsRepository;
+import me.dio.catalog.domain.Solutions;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class NewsViewModel extends ViewModel {
+public class SolutionsViewModel extends ViewModel {
 
     public enum State {
         DOING, DONE, ERROR;
     }
 
-    private final MutableLiveData<List<News>> news = new MutableLiveData<>();
+    private final MutableLiveData<List<Solutions>> news = new MutableLiveData<>();
     private final MutableLiveData<State> state = new MutableLiveData<>();
 
-    public NewsViewModel() {
+    public SolutionsViewModel() {
         this.findNews();
     }
 
     public void findNews() {
         state.setValue(State.DOING);
-        SoccerNewsRepository.getInstance().getRemoteApi().getNews().enqueue(new Callback<List<News>>() {
+        SolutionsRepository.getInstance().getRemoteApi().getNews().enqueue(new Callback<List<Solutions>>() {
             @Override
-            public void onResponse(@NonNull Call<List<News>> call, @NonNull Response<List<News>> response) {
+            public void onResponse(@NonNull Call<List<Solutions>> call, @NonNull Response<List<Solutions>> response) {
                 if (response.isSuccessful()) {
                     news.setValue(response.body());
                     state.setValue(State.DONE);
@@ -42,18 +42,18 @@ public class NewsViewModel extends ViewModel {
             }
 
             @Override
-            public void onFailure(@NonNull Call<List<News>> call, Throwable error) {
+            public void onFailure(@NonNull Call<List<Solutions>> call, Throwable error) {
                 error.printStackTrace();
                 state.setValue(State.ERROR);
             }
         });
     }
 
-    public void saveNews(News news) {
-        AsyncTask.execute(() -> SoccerNewsRepository.getInstance().getLocalDb().newsDao().save(news));
+    public void saveNews(Solutions solutions) {
+        AsyncTask.execute(() -> SolutionsRepository.getInstance().getLocalDb().newsDao().save(solutions));
     }
 
-    public LiveData<List<News>> getNews() {
+    public LiveData<List<Solutions>> getNews() {
         return this.news;
     }
 

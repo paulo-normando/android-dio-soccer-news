@@ -1,4 +1,4 @@
-package me.dio.soccernews.ui.news;
+package me.dio.catalog.ui.news;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,17 +12,17 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.android.material.snackbar.Snackbar;
 
-import me.dio.soccernews.R;
-import me.dio.soccernews.databinding.FragmentNewsBinding;
-import me.dio.soccernews.ui.adapters.NewsAdapter;
+import me.dio.catalog.R;
+import me.dio.catalog.databinding.FragmentNewsBinding;
+import me.dio.catalog.ui.adapters.SolutionsAdapter;
 
-public class NewsFragment extends Fragment {
+public class SolutionsFragment extends Fragment {
 
     private FragmentNewsBinding binding;
-    private NewsViewModel newsViewModel;
+    private SolutionsViewModel solutionsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        newsViewModel = new ViewModelProvider(this).get(NewsViewModel.class);
+        solutionsViewModel = new ViewModelProvider(this).get(SolutionsViewModel.class);
 
         binding = FragmentNewsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
@@ -32,19 +32,19 @@ public class NewsFragment extends Fragment {
         observeNews();
         observeStates();
 
-        binding.srlNews.setOnRefreshListener(newsViewModel::findNews);
+        binding.srlNews.setOnRefreshListener(solutionsViewModel::findNews);
 
         return root;
     }
 
     private void observeNews() {
-        newsViewModel.getNews().observe(getViewLifecycleOwner(), news -> {
-            binding.rvNews.setAdapter(new NewsAdapter(news, newsViewModel::saveNews));
+        solutionsViewModel.getNews().observe(getViewLifecycleOwner(), news -> {
+            binding.rvNews.setAdapter(new SolutionsAdapter(news, solutionsViewModel::saveNews));
         });
     }
 
     private void observeStates() {
-        newsViewModel.getState().observe(getViewLifecycleOwner(), state -> {
+        solutionsViewModel.getState().observe(getViewLifecycleOwner(), state -> {
             switch (state) {
                 case DOING:
                     binding.srlNews.setRefreshing(true);

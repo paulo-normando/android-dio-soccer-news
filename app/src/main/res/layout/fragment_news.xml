@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.news.NewsFragment">
+    tools:context=".ui.solutions.NewsFragment">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/srlNews"
@@ -19,7 +19,7 @@
             android:id="@+id/rvNews"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:listitem="@layout/news_item" />
+            tools:listitem="@layout/card_item" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 

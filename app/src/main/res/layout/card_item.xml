@@ -8,18 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:id="@+id/ivThumbnail"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/news_image_height"
-            android:contentDescription="@string/cd_news_image"
-            android:src="@color/secondary_200"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
+        android:layout_height="208dp">
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvTitle"
@@ -31,20 +20,26 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivThumbnail"
-            tools:text="Ferroviária vence Palmeiras" />
+            tools:text="Ferroviária vence Palmeiras" /><![CDATA[
+
+        " />
+
+
+
+
+
+        ]]>
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvDescription"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/default_margin"
-            android:layout_marginTop="@dimen/default_margin"
-            android:layout_marginEnd="@dimen/default_margin"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-            tools:text="As meninas da Ferrinha derrotaram o Palmeiras no último domingo." />
+            android:layout_width="254dp"
+            android:layout_height="77dp"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#0033A0"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="49dp"
+            tools:text="Product Name, Product Name, Product Name, Product Name, Product Name, Product Name, Product Name, Product Name" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btOpenLink"
@@ -57,7 +52,8 @@
             android:text="@string/txt_open_link"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/ivFavorite"
@@ -72,7 +68,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
             app:layout_constraintEnd_toStartOf="@+id/ivShare"
             app:layout_constraintTop_toTopOf="@+id/btOpenLink"
-            app:srcCompat="@drawable/ic_favorite" />
+            app:srcCompat="@drawable/ic_bookmark" />
         <!-- Referência: Incluir o Efeito de Ripple (https://stackoverflow.com/a/61012286/3072570) -->
 
         <ImageView
